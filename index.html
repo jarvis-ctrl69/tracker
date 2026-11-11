@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure Cloud Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cloud Expense Tracker</h1>
+      <span class="badge">Environment: Production (Azure SWA)</span>
+    </header>
+
+    <div class="balance-card">
+      <h3>Total Spend</h3>
+      <p id="total-amount">₹0.00</p>
+    </div>
+
+    <form id="expense-form">
+      <input type="text" id="desc" placeholder="Expense description (e.g., Azure VM Lab)" required />
+      <input type="number" id="amount" placeholder="Amount (₹)" step="0.01" required />
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <ul id="expense-list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
